@@ -30,6 +30,7 @@ body {
 }
 a { color: var(--navy); text-underline-offset: 2px; }
 a:hover { color: var(--navy-2); }
+.tape .sym a, .items a, .cal a { display: inline-flex; align-items: center; min-height: 44px; }
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .wrap { max-width: 46rem; margin: 0 auto; padding: 0 16px; }
 h1, h2, h3 { line-height: 1.2; margin: 0; }
@@ -167,14 +168,14 @@ footer p { margin: .2rem 0; }
 /* ===== DATA. The refresh-brief agent edits BRIEF and CHANGELOG only. ===== */
 
 const WATCHLIST = {
-  owner: "Your Name",
+  owner: "DAVE",
   club: "SIBC",
   repo: "",
   tickers: [
     { symbol: "NVDA", name: "NVIDIA", exchange: "NASDAQ", why: "The AI capex cycle in one ticker. If this moves, the whole list moves." },
     { symbol: "JPM",  name: "JPMorgan Chase", exchange: "NYSE", why: "The bank every banking recruit should be able to talk about for five minutes." },
     { symbol: "ACN",  name: "Accenture", exchange: "NYSE", why: "The consulting bellwether. Its bookings tell you how clients feel about spending." },
-    { symbol: "DE",   name: "Deere", exchange: "NYSE", why: "Midwest industrial. Farm income, tariffs, and rates all show up here." },
+    { symbol: "SHW",  name: "Sherwin-Williams", exchange: "NYSE", why: "The paint bellwether. Housing, remodeling, and raw material costs all show up here." },
     { symbol: "LLY",  name: "Eli Lilly", exchange: "NYSE", why: "Indiana's largest company and the GLP-1 story." }
   ]
 };
